@@ -1,7 +1,5 @@
 package Obst;
 
-import java.security.PublicKey;
-
 public class Erdbeeer extends Obst{
     private String geschmack;
 

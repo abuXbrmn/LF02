@@ -1,20 +1,34 @@
 package KraftFahrzeuge;
 
-public class kraftfahrzeuge {
+import java.util.ArrayList;
+
+public  abstract class Kraftfahrzeuge {
     private String marke ;
     private  String model;
     private String farbe;
     private int baujahr;
+    private double wert;
 
-    public kraftfahrzeuge(String marke , String model,String farbe, int baujahr){
+    public Kraftfahrzeuge(String marke , String model, String farbe, int baujahr, double wert){
         this.marke=marke;
         this.model=model;
         this.farbe=farbe;
         this.baujahr= baujahr;
+        this.wert=wert;
     }
+
+    public double getWert() {
+        return wert;
+    }
+
+    public void setWert(double wert) {
+        this.wert = wert;
+    }
+
     public String getMarke(){
         return marke;
     }
+
     public  String getModel(){
         return model;
     }

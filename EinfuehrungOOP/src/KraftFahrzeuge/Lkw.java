@@ -1,9 +1,9 @@
 package KraftFahrzeuge;
 
-public class Lkw  extends kraftfahrzeuge{
+public class Lkw  extends Kraftfahrzeuge {
     private int anzahlAchsen ;
-    public Lkw( String marke , String model ,String farbe , int anzahlAchsen){
-        super(marke,model,farbe,anzahlAchsen);
+    public Lkw( String marke , String model ,String farbe , int anzahlAchsen ,double wert){
+        super(marke,model,farbe,anzahlAchsen,wert);
         this.anzahlAchsen=anzahlAchsen;
     }
     public int getanzahlAchsen(){
@@ -19,6 +19,7 @@ public class Lkw  extends kraftfahrzeuge{
         ausgabe +="\n\t Farbe :"+getFarbe();
         ausgabe +="\n\t Baujahr :"+getBaujahr();
         ausgabe +="\n\t Anzahl Achsen :"+getanzahlAchsen();
+        ausgabe+= "\n\t wert :"+getWert();
         return ausgabe;
     }
 }
