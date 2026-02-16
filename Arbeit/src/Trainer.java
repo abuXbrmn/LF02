@@ -1,29 +1,23 @@
-public class Trainer {
-    private String name;
-    private int alter ;
+public class Trainer extends Person {
+
     private  int erfahrung ;
 
-    public Trainer(String name , int  alter , int erfahrung){
-        this.name=name;
-        this.alter=alter;
+    public Trainer ( String name , int alter,int erfahrung){
+        super( name , alter);
         this.erfahrung=erfahrung;
     }
-    public int getAlter() {
-        return alter;
-    }
-    public void setAlter(int alter){
-        this.alter=alter;
-    }
-    public String getname(){
-        return name ;
-    }
-    public void setName(String name){
-        this.name=name;
-    }
+
     public int getErfahrung(){
         return erfahrung;
     }
     public void setErfahrung(int erfahrung){
         this.erfahrung=erfahrung;
+    }
+    @Override
+    public String toString() {
+        String ausgabe ;
+        ausgabe = super.toString();
+        ausgabe += "\n erfahrung " +  "\t\t|" + erfahrung;
+        return ausgabe;
     }
 }
