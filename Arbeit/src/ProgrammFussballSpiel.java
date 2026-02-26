@@ -24,7 +24,6 @@ public class ProgrammFussballSpiel {
         spielerListe.add(spieler4);
 
         Mannschaft mannschaft1 = new Mannschaft("FC Bolani ", trainer1,torwart1,spielerListe );
-        System.out.println(mannschaft1+"\n<--------------------->");
 
 
 
@@ -35,7 +34,14 @@ public class ProgrammFussballSpiel {
         spielerliste2.add(gastSpieler3);
         spielerliste2.add(gastSpieler4);
         Mannschaft mannschaft2 = new Mannschaft("SV Podari",trainer2,torwart2,spielerliste2);
-        System.out.println(mannschaft2);
-        //Spiel spiel1 = new Spiel();
+
+        Spiel spiel1 = new Spiel(mannschaft1,mannschaft2);
+        try {
+            GamePlay.spielen(spiel1);
+
+        }catch (SpielAbruchException abu){
+            System.out.println(abu.getMessage());
+        }
+        System.out.println(spiel1.getSpielbericht());
     }
 }

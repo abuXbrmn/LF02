@@ -2,7 +2,8 @@ public class Ergebnis {
     private int heim;
     private int toregast;
 
-    public Ergebnis(){}
+    public Ergebnis() {
+    }
 
     public int getHeim() {
         return heim;
@@ -19,10 +20,22 @@ public class Ergebnis {
     public void setToregast(int toregast) {
         this.toregast = toregast;
     }
+
     @Override
-    public String toString(){
+    public String toString()
+    {
         String ausgabe = "\n ToreHeim " + heim;
-        ausgabe+= "\n Toregast " + toregast;
+        ausgabe += "\n Toregast " + toregast;
         return ausgabe;
     }
+
+    public void addToreHeim() {
+        heim++;
+    }
+
+    public void addToregast() {
+        toregast++;
+    }
 }
+
+

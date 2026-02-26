@@ -27,10 +27,9 @@ public Spiel(Mannschaft heim,Mannschaft gast){
     }
     @Override
     public String toString(){
-    String ausgabe = "\n Heim-Manschaft :"+ heim;
-    ausgabe+="\n Gast-Manschaft :"+ gast;
-    ausgabe+="\n Ergebnis :"+ ergebnis;
-    ausgabe+="\n Spiel Bericht :" +spielbericht;
+    String ausgabe = "\n\n Heim-Manschaft :"+ heim;
+    ausgabe+="\n\n Gast-Manschaft :"+ gast;
+    ausgabe+="\n\n Spiel Bericht: \n" + spielbericht;
     return ausgabe;
     }
 }
