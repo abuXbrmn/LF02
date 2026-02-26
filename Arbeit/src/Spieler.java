@@ -43,4 +43,8 @@ public class Spieler extends Person{
         return ausgabe;
 
     }
+
+    public void addTor() {
+        torschusse++;
+    }
 }
