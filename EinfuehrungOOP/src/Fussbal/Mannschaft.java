@@ -1,3 +1,5 @@
+package Fussbal;
+
 import java.util.ArrayList;
 
 public class Mannschaft {
@@ -85,9 +87,9 @@ public class Mannschaft {
 @Override
     public String toString(){
         String ausgabe ="\n Name "+getName();
-        ausgabe+="\n\n Trainer "+getTrainer();
+        ausgabe+="\n\n Fussbal.Trainer "+getTrainer();
         ausgabe+="\n\n Torwart "+getTorwart();
-        ausgabe += "\n\n Spieler: ";
+        ausgabe += "\n\n Fussbal.Spieler: ";
         ausgabe+=" \n "+getKader();
         return  ausgabe;
     }

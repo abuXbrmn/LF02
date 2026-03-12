@@ -1,3 +1,5 @@
+package Fussbal;
+
 public class SpielAbruchException extends Exception {
 
     private  int spielMin;

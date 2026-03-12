@@ -1,5 +1,7 @@
+package rollenspiel;
+
 public class Elfe extends Charaktere {
-//private int staerkepunkte;
+    private int staerkepunkte;
  private int rennen;
 
     public Elfe(String name, int staerkepunkte,int rennen) {

@@ -1,3 +1,5 @@
+package rollenspiel;
+
 public  abstract class   Charaktere {
     private String name;
     private int staerkepunkte;
@@ -45,15 +47,15 @@ public  abstract class   Charaktere {
         }else
             throw new KeineKraktException(name,"Zuschwach für kämpfen");
     }
-    public void essen () throws KeineKraktException {
-        System.out.println(name + "isst etwas.");
+    public void essen () {
+        System.out.println(name + "\tisst etwas.");
         staerkepunkte += 10;
     }
 
     @Override
     public String toString(){
         String ausgabe ;
-        ausgabe= "\n Name "+"\t\t\t|" +name;
+        ausgabe= "\n Name "+"\t\t\t\t\t |" +name;
         ausgabe+= "\n Stärkepunkte "+" \t\t\t |"+staerkepunkte;
     return  ausgabe;}
 }
