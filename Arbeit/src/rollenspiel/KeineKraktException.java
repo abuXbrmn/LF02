@@ -1,3 +1,5 @@
+package rollenspiel;
+
 public class KeineKraktException extends Exception{
     private String name ;
     private String aktion;
@@ -10,7 +12,7 @@ public class KeineKraktException extends Exception{
     }
     @Override
     public String getMessage(){
-       String getMessag=" ihre Figur hat viel zu wenig Energie";
+       String getMessag=" ihre Figur hat viel zu wenig Energie\t" + name;
        return getMessag;
     }
 }

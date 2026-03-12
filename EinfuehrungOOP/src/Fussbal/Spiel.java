@@ -1,3 +1,5 @@
+package Fussbal;
+
 public class Spiel {
     private Mannschaft heim;
     private Mannschaft gast;
@@ -29,7 +31,7 @@ public Spiel(Mannschaft heim,Mannschaft gast){
     public String toString(){
     String ausgabe = "\n\n Heim-Manschaft :"+ heim;
     ausgabe+="\n\n Gast-Manschaft :"+ gast;
-    ausgabe+="\n\n Spiel Bericht: \n" + spielbericht;
+    ausgabe+="\n\n Fussbal.Spiel Bericht: \n" + spielbericht;
     return ausgabe;
     }
 }

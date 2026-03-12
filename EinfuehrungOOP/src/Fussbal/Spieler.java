@@ -1,4 +1,6 @@
-public class Spieler extends Person{
+package Fussbal;
+
+public class Spieler extends Person {
 
     private int staerke;
     private int torschusse;

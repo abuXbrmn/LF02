@@ -1,3 +1,5 @@
+package Fussbal;
+
 public class ProgrammTest1Fussball {
 
     public static void main(String[] args) {

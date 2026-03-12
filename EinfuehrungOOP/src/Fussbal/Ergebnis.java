@@ -1,3 +1,5 @@
+package Fussbal;
+
 public class Ergebnis {
     private int heim;
     private int toregast;
