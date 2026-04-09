@@ -21,8 +21,8 @@ public class Kiste {
     @Override
     public String toString(){
         String ausgabe;
-        ausgabe = "\t"+getId()+"ID:";
-        ausgabe+="\t"+getWert()+"Wert:";
+        ausgabe = "\n"+"ID:"+"\t"+getId();
+        ausgabe+="\n"+"Wert:"+getWert();
         return ausgabe;
     }
 }

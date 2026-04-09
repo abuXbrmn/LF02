@@ -1,6 +1,6 @@
 package Tresor;
 
-public class Schmuck  extends Kiste{
+public class Schmuck extends Kiste{
     String bezeichnung ;
 
 
@@ -19,8 +19,10 @@ public class Schmuck  extends Kiste{
     @Override
     public String toString(){
         String ausgabe ;
-        ausgabe="\t"+bezeichnung+"Bezeichnung :";
-        return  bezeichnung;
+        ausgabe =" SCHMUCK"+"\n";
+        ausgabe += super.toString();
+        ausgabe +="\t"+"Bezeichnung"+"\t"+bezeichnung ;
+        return  ausgabe;
     }
 }
 

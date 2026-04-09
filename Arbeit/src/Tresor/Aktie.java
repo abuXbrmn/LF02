@@ -20,8 +20,9 @@ public class Aktie extends Kiste{
     @Override
     public String toString(){
         String ausgabe;
-        ausgabe="\t"+unternehmen+"Unternehmen Name :";
-        ausgabe+="\t"+nennWert+"Nennwert :";
+        ausgabe = "AKTIE"+"\n";
+        ausgabe+="Unternehmen Name :"+"\t"+unternehmen;
+        ausgabe+="\t"+"Nennwert :"+"\t"+nennWert;
         return ausgabe;
     }
 }
